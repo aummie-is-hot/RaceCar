@@ -31,6 +31,7 @@ import javafx.scene.media.MediaPlayer;
 
 public class FXMLController implements Initializable {
     MediaPlayer player;
+    //conner is cool
     @FXML
     private Button btnQuit;
 
