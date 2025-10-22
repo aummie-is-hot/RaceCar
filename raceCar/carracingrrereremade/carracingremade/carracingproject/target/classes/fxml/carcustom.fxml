@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1028.0" prefWidth="1210.0" style="-fx-background-color: #895129;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carracingproject.fxcore.FXMLControllerCarCustom">
+   <children>
+      <Label fx:id="lblOut" layoutX="393.0" layoutY="-23.0" minHeight="16" minWidth="69" prefHeight="137.0" prefWidth="498.0" text="Customize" textFill="WHITE">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="146.0" layoutX="64.0" layoutY="195.0" stroke="BLACK" strokeType="INSIDE" width="1145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" layoutX="65.0" layoutY="114.0" stroke="BLACK" strokeType="INSIDE" width="398.0" />
+      <Label fx:id="lblOut1" layoutX="64.0" layoutY="110.0" minHeight="16" minWidth="69" prefHeight="118.0" prefWidth="389.0" text="Normal" textFill="WHITE">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOut12" layoutX="67.0" layoutY="181.0" minHeight="16" minWidth="69" prefHeight="208.0" prefWidth="573.0" text="This makes your car the default one." textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="1039.0" layoutY="-1.0" mnemonicParsing="false" onAction="#btnBackA" prefHeight="66.0" prefWidth="172.0" styleClass="lion" stylesheets="@../styles/styles.css" text="back" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnApplyNormal" layoutX="977.0" layoutY="249.0" mnemonicParsing="false" onAction="#btnApplyNormalA" prefHeight="92.0" prefWidth="234.0" style="-fx-background-color: green;" text="Apply" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBackgroundA" layoutX="872.0" layoutY="136.0" mnemonicParsing="false" onAction="#btnBackgroundA" prefHeight="66.0" prefWidth="332.0" styleClass="lion" stylesheets="@../styles/styles.css" text="Backgrounds" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="146.0" layoutX="62.0" layoutY="426.0" stroke="BLACK" strokeType="INSIDE" width="1145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" layoutX="63.0" layoutY="339.0" stroke="BLACK" strokeType="INSIDE" width="398.0" />
+      <Label fx:id="lblOut11" layoutX="62.0" layoutY="335.0" minHeight="16" minWidth="69" prefHeight="118.0" prefWidth="389.0" text="Race Car" textFill="WHITE">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOut121" layoutX="65.0" layoutY="412.0" minHeight="16" minWidth="69" prefHeight="208.0" prefWidth="573.0" text="Race Car lowers your reach but increase the max speed." textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnApplyRace" layoutX="975.0" layoutY="480.0" mnemonicParsing="false" onAction="#btnApplyRaceA" prefHeight="92.0" prefWidth="234.0" style="-fx-background-color: green;" text="Apply" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="146.0" layoutX="62.0" layoutY="657.0" stroke="BLACK" strokeType="INSIDE" width="1145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" layoutX="63.0" layoutY="571.0" stroke="BLACK" strokeType="INSIDE" width="398.0" />
+      <Label fx:id="lblOut13" layoutX="62.0" layoutY="572.0" minHeight="16" minWidth="69" prefHeight="118.0" prefWidth="389.0" text="Limo" textFill="WHITE">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOut122" layoutX="65.0" layoutY="633.0" minHeight="16" minWidth="69" prefHeight="208.0" prefWidth="622.0" text="This makes your car a limo, increases reach but decreases max speed" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnApplyLimo" layoutX="975.0" layoutY="711.0" mnemonicParsing="false" onAction="#btnApplyLimoA" prefHeight="92.0" prefWidth="234.0" style="-fx-background-color: green;" text="Apply" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="146.0" layoutX="57.0" layoutY="872.0" stroke="BLACK" strokeType="INSIDE" width="1145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" layoutX="58.0" layoutY="791.0" stroke="BLACK" strokeType="INSIDE" width="398.0" />
+      <Label fx:id="lblOut14" layoutX="57.0" layoutY="787.0" minHeight="16" minWidth="69" prefHeight="118.0" prefWidth="389.0" text="Golden Car" textFill="WHITE">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOut123" layoutX="58.0" layoutY="858.0" minHeight="16" minWidth="69" prefHeight="208.0" prefWidth="573.0" text="This is the golden car with an insane max speed" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnApplyGolden" layoutX="970.0" layoutY="926.0" mnemonicParsing="false" onAction="#btnApplyGoldenA" prefHeight="92.0" prefWidth="234.0" style="-fx-background-color: green;" text="Apply" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="572.0" layoutY="878.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="679.0" layoutY="655.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../Limo.png" />
+         </image></ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="605.0" layoutY="424.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../racecarupgraded.png" />
+         </image></ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="605.0" layoutY="199.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../RaceCarRemade.png" />
+         </image></ImageView>
+      <Label layoutX="987.0" layoutY="182.0" prefHeight="92.0" prefWidth="201.0" text="Cost: free" textFill="#78f8b8" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUnlockUpgrade" layoutX="821.0" layoutY="407.0" prefHeight="92.0" prefWidth="389.0" text="Unlock luck upgrade" textFill="#78f8b8" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="972.0" layoutY="631.0" prefHeight="92.0" prefWidth="223.0" text="Cost: $5000" textFill="#78f8b8" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="945.0" layoutY="859.0" prefHeight="92.0" prefWidth="248.0" text="Cost: $15000" textFill="#78f8b8" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

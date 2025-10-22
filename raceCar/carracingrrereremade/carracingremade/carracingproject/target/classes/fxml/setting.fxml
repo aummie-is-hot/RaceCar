@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #895129;" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carracingproject.fxcore.FXMLControllerSettings">
+   <children>
+      <Label layoutX="211.0" prefHeight="66.0" prefWidth="197.0" text="Settings" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBackgroundMusic" layoutX="274.0" layoutY="142.0" mnemonicParsing="false" onAction="#btnBackgroundMusicA" style="-fx-background-color: green;" text="on" textFill="WHITE" />
+      <Button fx:id="btnSoundEffects" layoutX="274.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnSoundEffectsA" style="-fx-background-color: green;" text="on" textFill="WHITE" />
+      <Label layoutX="76.0" layoutY="118.0" prefHeight="66.0" prefWidth="197.0" text="Background music" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="193.0" prefHeight="66.0" prefWidth="197.0" text="Sound effects" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="522.0" layoutY="15.0" mnemonicParsing="false" onAction="#btnBackA" prefHeight="43.0" prefWidth="64.0" text="Back">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
