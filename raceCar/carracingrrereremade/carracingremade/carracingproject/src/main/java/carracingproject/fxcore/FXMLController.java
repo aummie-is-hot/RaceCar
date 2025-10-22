@@ -400,6 +400,10 @@ public class FXMLController implements Initializable {
         timelineBackground.play();
         lblMoney.setText("Money: 100");
         lblOut.setText("");
+        if(MainApp.Limo == 1){
+imgPlayer.setFitWidth(imgPlayer.getFitWidth()+20);
+        }
+        
         
 
         /*
