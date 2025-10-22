@@ -32,7 +32,7 @@ import javafx.scene.media.MediaPlayer;
 public class FXMLControllerCarCustom implements Initializable {
     @FXML
     private Button btnApplyGolden;
-
+    MediaPlayer player;
     @FXML
     private Button btnApplyLimo;
 
@@ -80,7 +80,8 @@ public class FXMLControllerCarCustom implements Initializable {
 
     @FXML
     void btnApplyGoldenA(ActionEvent event) {
-        if (MainApp.goldenCar == 0) {
+        if (MainApp.money >=15000){
+            if (MainApp.goldenCar == 0) {
             MainApp.RaceCar = 0;
             MainApp.normalCar = 0;
             MainApp.Limo = 0;
@@ -89,12 +90,26 @@ public class FXMLControllerCarCustom implements Initializable {
             btnApplyNormal.setDisable(false);
             btnApplyLimo.setDisable(false);
             btnApplyGolden.setDisable(true);
+            MainApp.money = MainApp.money - 15000;
+            player = new MediaPlayer((new Media(getClass().getResource("/payed.mp3").toString())));
+            player.play();
+        }
+        } else {
+            player = new MediaPlayer((new Media(getClass().getResource("/wronganswer-37702.mp3").toString())));
+      player.play();
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("Insufficient Funds");
+            alert.setHeaderText(null);
+            alert.setContentText("You need $15,000 to unlock the Golden Car!");
+            alert.showAndWait();
+            
         }
     }
 
     @FXML
     void btnApplyLimoA(ActionEvent event) {
-        if (MainApp.Limo == 0) {
+         if (MainApp.money >=5000){
+            if (MainApp.Limo == 0) {
             MainApp.RaceCar = 0;
             MainApp.normalCar = 0;
             MainApp.Limo = 1;
@@ -103,12 +118,27 @@ public class FXMLControllerCarCustom implements Initializable {
             btnApplyNormal.setDisable(false);
             btnApplyLimo.setDisable(true);
             btnApplyGolden.setDisable(false);
+            MainApp.money = MainApp.money - 5000;
+            player = new MediaPlayer((new Media(getClass().getResource("/payed.mp3").toString())));
+            player.play();
         }
+         }else {
+            player = new MediaPlayer((new Media(getClass().getResource("/wronganswer-37702.mp3").toString())));
+      player.play();
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("Insufficient Funds");
+            alert.setHeaderText(null);
+            alert.setContentText("You need $5000 to unlock the Limo!");
+            alert.showAndWait();
+            
+        }
+        
     }
 
     @FXML
     void btnApplyNormalA(ActionEvent event) {
-        if (MainApp.normalCar == 0) {
+        
+            if (MainApp.normalCar == 0) {
             MainApp.RaceCar = 0;
             MainApp.normalCar = 1;
             MainApp.Limo = 0;
@@ -117,11 +147,17 @@ public class FXMLControllerCarCustom implements Initializable {
             btnApplyNormal.setDisable(true);
             btnApplyLimo.setDisable(false);
             btnApplyGolden.setDisable(false);
+            player = new MediaPlayer((new Media(getClass().getResource("/payed.mp3").toString())));
+            player.play();
         }
+       
+        
+        
     }
 
     @FXML
     void btnApplyRaceA(ActionEvent event) {
+        
         if (MainApp.upgradeLuck == 1) {
             MainApp.RaceCar = 1;
             MainApp.normalCar = 0;
@@ -132,7 +168,21 @@ public class FXMLControllerCarCustom implements Initializable {
             btnApplyNormal.setDisable(false);
             btnApplyLimo.setDisable(false);
             btnApplyGolden.setDisable(false);
+            player = new MediaPlayer((new Media(getClass().getResource("/payed.mp3").toString())));
+            player.play();
+            
         }
+        
+        else {
+            player = new MediaPlayer((new Media(getClass().getResource("/wronganswer-37702.mp3").toString())));
+      player.play();
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("Insufficient Funds");
+            alert.setHeaderText(null);
+            alert.setContentText("You need to unlock the luck upgrade to use this car!");
+            alert.showAndWait();
+            
+    }
     }
 
     @FXML
@@ -209,7 +259,7 @@ public class FXMLControllerCarCustom implements Initializable {
         }
         /*
          
-         Make the the race car auto turn on if clicked
+         
          
          
          

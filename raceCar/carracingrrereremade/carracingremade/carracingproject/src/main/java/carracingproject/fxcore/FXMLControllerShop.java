@@ -89,6 +89,11 @@ public class FXMLControllerShop implements Initializable {
       MainApp.upgradelevelluck = MainApp.upgradelevelluck+1;
       player = new MediaPlayer((new Media(getClass().getResource("/payed.mp3").toString())));
       player.play();
+      Alert alert = new Alert(AlertType.INFORMATION);
+      alert.setTitle("Information Dialog");
+      alert.setHeaderText(null);
+      alert.setContentText("Go to customize to equip the race car skin which give a speed bonus!");
+      alert.showAndWait();
       
       
       }

@@ -410,11 +410,7 @@ public class FXMLController implements Initializable {
           Add Credits page
           add textures
           make the background music button work
-          more car customization with diffreant stats
-          race car lowers reach but increases max speed - $150
-          normal car is just the normal - free
-          limo decreases max speed but increases reach - $1000
-          golden car can go extremely fast but costs alot of money - ie 15 000
+          Make the lengths of the cars fit the stats
           make the text fit
           
          
